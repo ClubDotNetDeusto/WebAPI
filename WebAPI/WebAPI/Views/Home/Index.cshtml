@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" href="../Content/bootstrap.min.css" />
+    <script src="../Scripts/jquery-1.10.2.js"></script>
+    <script src="../Scripts/AzureServiceScript.js"></script>
+    <meta name="viewport" content="width=device-width" />
+    <title>View</title>
+</head>
+<body>
+    <div id="listadoServicios">
+        <h2>Lista de servicios Azure:</h2>
+        <ul></ul>
+    </div>
+    <div id="detalleServicio">
+        <h2>Buscar un servicio:</h2>
+        <input type="text" id="idServicio" />
+        <input type="submit" value="Detalles" onclick="detalleServicio()" />
+        <input type="submit" value="Borrar" onclick="borrarServicio()" />
+        <div id="detalles">
+
+        </div>
+    </div>
+    <div>
+        <h2>Añadir nuevo servicio: </h2>
+        Name: <input type="text" id="name" />
+        Description: <input type="text" id="description" />
+        <input type="submit" value="Añadir" onclick="nuevoServicio()" />
+    </div>
+</body>
+</html>
+
